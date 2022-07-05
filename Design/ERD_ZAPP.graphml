@@ -88,12 +88,13 @@ extra_tekst&lt;br&gt;
       <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="90.0" width="97.0" x="71.0" y="190.16666666666666"/>
+          <y:Geometry height="99.0" width="140.0" x="71.0" y="181.16666666666666"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="65.365234375" x="15.8173828125" xml:space="preserve" y="4.0">Takenclient</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="52.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="top" visible="true" width="63.0" x="2.0" xml:space="preserve" y="30.701171875">&lt;html&gt; &lt;u&gt; taak_id, &lt;/u&gt;&lt;br&gt;
-naam,&lt;br&gt;
+          <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="65.365234375" x="37.3173828125" xml:space="preserve" y="4.0">Takenclient</y:NodeLabel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="68.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="top" visible="true" width="131.0" x="2.0" xml:space="preserve" y="30.70117187499997">&lt;html&gt; &lt;b&gt;id,&lt;/b&gt;&lt;br&gt;
+&lt;u&gt; taak_id, &lt;/u&gt;&lt;br&gt;
+persoonsgegevens_id,&lt;br&gt;
 extra_tekst
 <y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
@@ -106,7 +107,7 @@ extra_tekst
       <data key="d5"/>
       <data key="d6">
         <y:GenericNode configuration="com.yworks.entityRelationship.big_entity">
-          <y:Geometry height="111.0" width="97.0" x="71.0" y="357.83333333333337"/>
+          <y:Geometry height="111.0" width="97.0" x="92.5" y="357.83333333333337"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="54.68359375" x="21.158203125" xml:space="preserve" y="4.0">Takenlijst</y:NodeLabel>
@@ -127,9 +128,11 @@ omschrijving&lt;br&gt;<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelMod
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" backgroundColor="#B7C9E3" configuration="com.yworks.entityRelationship.label.name" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasLineColor="false" height="18.701171875" horizontalTextPosition="center" iconTextGap="4" modelName="internal" modelPosition="t" textColor="#000000" verticalTextPosition="bottom" visible="true" width="80.060546875" x="29.9697265625" xml:space="preserve" y="4.0">Agendadetails</y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="68.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="top" visible="true" width="131.0" x="2.0" xml:space="preserve" y="30.701171875">&lt;html&gt;&lt;u&gt;agenda_id,&lt;/u&gt;&lt;br&gt;
-&lt;u&gt;taak_id,&lt;/u&gt;&lt;br&gt;
-&lt;u&gt;persoonsgegevens_id,&lt;/u&gt;&lt;br&gt;
+          <y:NodeLabel alignment="left" autoSizePolicy="content" configuration="com.yworks.entityRelationship.label.attributes" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="100.0" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="top" visible="true" width="131.0" x="2.0" xml:space="preserve" y="30.701171875">&lt;html&gt;&lt;b&gt;id,&lt;/b&gt;&lt;br&gt;
+&lt;u&gt;agenda_id,&lt;/u&gt;&lt;br&gt;
+&lt;u&gt;takenclient_id,&lt;/u&gt;&lt;br&gt;
+persoonsgegevens_id,&lt;br&gt;
+datum,&lt;br&gt;
 tijdstip&lt;br&gt;<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><y:ModelParameter><y:ErdAttributesNodeLabelModelParameter/></y:ModelParameter></y:NodeLabel>
           <y:StyleProperties>
             <y:Property class="java.lang.Boolean" name="y.view.ShadowNodePainter.SHADOW_PAINTING" value="true"/>
@@ -151,18 +154,7 @@ tijdstip&lt;br&gt;<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e1" source="n0" target="n2">
-      <data key="d9"/>
-      <data key="d10">
-        <y:PolyLineEdge>
-          <y:Path sx="-1.822499999999991" sy="-73.22680568147473" tx="0.0" ty="0.0"/>
-          <y:LineStyle color="#000000" type="line" width="1.0"/>
-          <y:Arrows source="crows_foot_many" target="none"/>
-          <y:BendStyle smoothed="false"/>
-        </y:PolyLineEdge>
-      </data>
-    </edge>
-    <edge id="e2" source="n5" target="n4">
+    <edge id="e1" source="n5" target="n4">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
@@ -173,11 +165,22 @@ tijdstip&lt;br&gt;<y:LabelModel><y:ErdAttributesNodeLabelModel/></y:LabelModel><
         </y:PolyLineEdge>
       </data>
     </edge>
-    <edge id="e3" source="n6" target="n2">
+    <edge id="e2" source="n6" target="n2">
       <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+          <y:LineStyle color="#000000" type="line" width="1.0"/>
+          <y:Arrows source="crows_foot_many" target="none"/>
+          <y:BendStyle smoothed="false"/>
+        </y:PolyLineEdge>
+      </data>
+    </edge>
+    <edge id="e3" source="n2" target="n0">
+      <data key="d9"/>
+      <data key="d10">
+        <y:PolyLineEdge>
+          <y:Path sx="0.0" sy="0.0" tx="10.427500000000009" ty="-73.22680568147473"/>
           <y:LineStyle color="#000000" type="line" width="1.0"/>
           <y:Arrows source="crows_foot_many" target="none"/>
           <y:BendStyle smoothed="false"/>
