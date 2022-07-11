@@ -1,14 +1,8 @@
-SELECT DISTINCT
-*
-FROM agendadetails
+SELECT DISTINCT * FROM agenda 
 
-LEFT JOIN agenda
-ON agenda.id = agendadetails.agenda_id 
-LEFT JOIN persoonsgegevens
-ON persoonsgegevens.id = agenda.persoonsgegevens_id
-RIGHT JOIN takenclient
-ON takenclient.persoonsgegevens_id = agenda.persoonsgegevens_id
-LEFT JOIN takenlijst 
-ON takenlijst.id = takenclient.taak_id
-
-ORDER BY agenda.id, datumtijd ASC
+LEFT JOIN agendadetails ON agendadetails.agenda_id = agenda.id  
+LEFT JOIN persoonsgegevens ON persoonsgegevens.id = agenda.persoonsgegevens_id 
+LEFT JOIN takenclient ON takenclient.id = agendadetails.takenclient_id
+LEFT JOIN takenlijst ON takenlijst.id = takenclient.taak_id 
+GROUP BY agendadetails.id 
+ORDER BY naam, datumtijd ASC;

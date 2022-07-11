@@ -19,8 +19,16 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/xampp/htdocs/educom-ZAPP/ConnectingToMySQL/Zapp_2/Pages/AddAppointmentPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkQXBwb2ludG1lbnRQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/xampp/htdocs/educom-ZAPP/ConnectingToMySQL/Zapp_2/Pages/Agenda.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWdlbmRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/xampp/htdocs/educom-ZAPP/ConnectingToMySQL/Zapp_2/Pages/EditAppointmentPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdEFwcG9pbnRtZW50UGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/xampp/htdocs/educom-ZAPP/ConnectingToMySQL/Zapp_2/Pages/FetchData.razor]

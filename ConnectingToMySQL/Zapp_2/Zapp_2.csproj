@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\RadzenExample.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Radzen.Blazor" Version="3.19.3" />
   </ItemGroup>
 
