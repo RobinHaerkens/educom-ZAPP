@@ -1,0 +1,56 @@
+﻿@page "/fetchdata"
+
+@using DataLibrary
+@using Zapp_2.Models
+@using Microsoft.Extensions.Configuration
+@inject IDataAccess _data
+@inject IConfiguration _config
+
+
+<h3>Client table</h3>
+
+<button class="btn btn-primary" @onclick="InsertData">Insert</button>
+
+
+
+@if (schedule == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    @foreach(var p in schedule)
+    {
+
+        <p>
+           @p.datumtijd @p.naam @p.taak_id @p.taak
+        </p>
+    }
+    
+}
+
+@code {
+    List<PersonModel> schedule;   
+
+    private async Task InsertData()
+    {
+        string sql = "insert into takenlijst (taak, omschrijving) values (@taak, @omschrijving);";
+
+        await _data.SaveData(sql, new { taak = "koken", omschrijving = "eten maken" }, _config.GetConnectionString("default"));
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        string sql = "SELECT DISTINCT * FROM agenda " +
+
+                     "LEFT JOIN agendadetails ON agendadetails.agenda_id = agenda.id " +
+                     "LEFT JOIN persoonsgegevens ON persoonsgegevens.id = agenda.persoonsgegevens_id " +
+                     "LEFT JOIN takenclient ON takenclient.persoonsgegevens_id = agenda.persoonsgegevens_id " +
+                     "LEFT JOIN takenlijst ON takenlijst.id = takenclient.taak_id " +
+                     "ORDER BY naam, datumtijd ASC;";
+        schedule = await _data.LoadData<PersonModel, dynamic>(sql,new {}, _config.GetConnectionString("default"));
+
+    }
+
+
+}
